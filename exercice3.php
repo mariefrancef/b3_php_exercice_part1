@@ -24,8 +24,46 @@ class Employee extends Person{
     parent::__construct($first_name, $last_name, $age);
   }
 
+
+
   public function afficheInfos(){
     echo $this->first_name." ".$this->last_name.", ".$this->age." years, and the salary is ".$this->salary." €, in the position of ".$this->position."</br>";
+  }
+
+  /**
+   * Get the value of salary
+   */
+  public function getSalary(): string
+  {
+      return $this->salary;
+  }
+
+  /**
+   * Set the value of salary
+   */
+  public function setSalary(string $salary): self
+  {
+      $this->salary = $salary;
+
+      return $this;
+  }
+
+  /**
+   * Get the value of position
+   */
+  public function getPosition(): string
+  {
+      return $this->position;
+  }
+
+  /**
+   * Set the value of position
+   */
+  public function setPosition(string $position): self
+  {
+      $this->position = $position;
+
+      return $this;
   }
 }
 
