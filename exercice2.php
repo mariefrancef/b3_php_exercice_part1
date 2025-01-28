@@ -31,7 +31,7 @@
   }
 
   public function afficheInfos(){
-    echo $this->first_name." ".$this->last_name.", ".$this->age." years";
+    echo $this->first_name." ".$this->last_name.", ".$this->age." years"."</br>";
   }
 }
 
